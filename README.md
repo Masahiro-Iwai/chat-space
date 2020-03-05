@@ -30,7 +30,7 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|index: true, null: false, unipue: true|
 |password|string|null: false|
-|username|string|index: true, null: false, unipue: true|
+|name|string|index: true, null: false, unipue: true|
 ### Association
 - has_many :messages
 - has_many :groups_users
