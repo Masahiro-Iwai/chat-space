@@ -1,0 +1,37 @@
+.main-chat
+  .main-header 
+    .main-header__left-box
+      %h1.main-header__left-box__current-group
+        test
+      %ul.main-header__left-box__member-list
+        Member : masa
+    .main-header__edit-btn
+      = link_to "#", class:"edit" do 
+        Edit
+
+  .messages
+    .message
+      .message__infobox
+        %p.message__upper-info
+          masa
+        %p.message__upper-info__date
+          2020/03/08(Sun) 09:46:55
+      .message__text
+        おはよう！
+
+      .message__infobox
+        %p.message__upper-info
+          masa
+        %p.message__upper-info__date
+          2020/03/08(Sun) 09:59:44
+      .message__text
+        今日は朝から雨
+
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
