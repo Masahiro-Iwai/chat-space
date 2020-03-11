@@ -1,8 +1,9 @@
 class GroupsController < ApplicationController
 
-  #def index
-  #end
-  #message_cont.がネストしているので不要？
+
+  def index
+  end
+
   
   def new
     @group = Group.new
