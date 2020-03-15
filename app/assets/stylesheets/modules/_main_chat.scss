@@ -38,6 +38,7 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 35px 40px;
+    overflow: scroll;
     .message {
       .upper-message {
         display: flex;
@@ -74,9 +75,7 @@
       display: flex;
       .input-box {
         position: relative;
-        width: 100%;
         display: flex;
-        justify-content: space-between;
         background-color: white;
         &__text {
           height: 50px;
